@@ -28,7 +28,7 @@ const BecomeCustomer = () => {
 
   return (
     <>
-    <div className="text-5xl font-light text-[#BE3455] pt-20">
+    <div className="text-7xl font-light text-[#BE3455] text-center pt-28">
        Join our community of loyal customers 
       
     </div>
@@ -36,15 +36,15 @@ const BecomeCustomer = () => {
       <DialogTrigger asChild>
 
         {/* <Button variant="outline">Edit Profile</Button> */}
-        <div data-aos="fade-up" className='cursor-pointer border border-[#BE3455] my-16 py-6 px-16 text-[#BE3455] hover:text-white hover:bg-[#BE3455] transition-all duration-500'>
+        <div data-aos="fade-up" className='cursor-pointer border border-[#BE3455] my-16 py-6 px-16 text-[#BE3455] hover:text-white hover:bg-[#BE3455] transition-all duration-700'>
          <h1 className='text-xl'>Become a Customer</h1>
         </div>
 
       </DialogTrigger>
 
-        <p className="opacity-70 text-center w-full pb-16">
+        <p className="opacity-50 text-center w-full pb-16 text-md">
           Join our online customers and get amazing advantages <br/>
-          such as booking house appointments...  cool right  ✌️😊
+          such as booking house appointments and more...  cool right  ✌️😊
         </p>
 
       <DialogContent className="sm:max-w-[425px]">

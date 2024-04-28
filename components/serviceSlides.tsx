@@ -4,12 +4,16 @@ import React, { useEffect, useState } from "react";
 import { MovingImageCards } from "./movingImageCards";
 
 import g3 from "@/public/g3.webp";
+import g2 from "@/public/g2.webp";
+import g1 from "@/public/g1.webp";
+import g4 from "@/public/g4.webp";
 
 export function ServiceSlides() {
+  
   return (
-    <div className="rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center  overflow-hidden">
       <MovingImageCards
-        items={services}
+        items={images}
         direction="right"
         speed="slow"
       />
@@ -17,33 +21,30 @@ export function ServiceSlides() {
   );
 }
 
-const services = [
+const images = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
     name: "Charles Dickens",
     title: "A Tale of Two Cities",
-    image: {g3}
+    image: g1,
   },
   {
-    Image:{g3},
     name: "William Shakespeare",
     title: "Hamlet",
-    image: {g3}
+    image: "https://www.freepik.com/free-photo/smiling-young-afro-american-male-barber-wearing-uniform-looking-pointing-front-stretching-out-scissors-comb-towards_17053927.htm#fromView=search&page=1&position=11&uuid=68504536-2cae-4378-8b2c-818cab00c926",
   },
   {
     
     name: "Edgar Allan Poe",
     title: "A Dream Within a Dream",
-    image: {g3}
+    image: g3,
   },
   {
-    image: {g3},
+    image: g4,
     name: "Jane Austen",
     title: "Pride and Prejudice",
   },
   {
-    image: {g3},
+    image: g3,
     name: "Herman Melville",
     title: "Moby-Dick",
   },

@@ -9,6 +9,7 @@ import g3 from "@/public/g3.webp"
 import g4 from "@/public/g4.webp"
 import gmain from "@/public/gmain.webp"
 import { useEffect } from "react";
+import { ServiceImageComponent } from "./serviceImagesComponent";
 
 const Services = () => {
 
@@ -19,13 +20,14 @@ const Services = () => {
   return (
     <>
     <div className='w-full pt-20 px-20 pb-10'>
-      <span data-aos="zoom-in" className="w-full text-7xl text-gray-800 py-8 font-light drop-shadow-xl ">
+      <span data-aos="zoom-in" className="w-full text-7xl text-[#BE3455] py-28 font-light drop-shadow-xl ">
         {/* Checkout Our <span className="underline text-indigo-500">Services</span> */}
 
         What we do.
       </span>
 
-      <div className="flex flex-row pt-16">
+      <ServiceImageComponent/>
+      {/* <div className="flex flex-row pt-16">
         <div className="flex flex-[50%]">
           <Image data-aos="fade-right" src={gmain} alt="" 
             className=""/>
@@ -44,11 +46,11 @@ const Services = () => {
             <Image data-aos="fade-left" src={g4} alt="" className="sm:block hidden"/>
           </div>
 
-          {/* <div className="w-full h-[20rem] bg-blue-500 relative">
+         <div className="w-full h-[20rem] bg-blue-500 relative">
             call btn
-          </div> */}
+          </div> 
         </div>
-      </div>
+      </div> */}
     </div>
     <ServiceCards/>
     </>

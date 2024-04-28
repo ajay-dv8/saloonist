@@ -1,9 +1,10 @@
-
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import g3  from "@/public/g3.webp";
+import g1  from "@/public/g1.webp";
+import g2  from "@/public/g2.webp";
 
 export const MovingImageCards = ({
   items,
@@ -91,14 +92,14 @@ export const MovingImageCards = ({
         {items.map((item, idx) => (
 
           <li
-          className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+          className="w-[350px] h-[300px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
           style={{
             backgroundImage: `url(${item.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
           }}
-          key={item.name}
+          key={idx}
         >
             <blockquote>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -119,3 +120,17 @@ export const MovingImageCards = ({
     </div>
   );
 };
+
+const images = [
+  {
+    image: {g1}
+  },
+  {
+
+    image: {g2}
+  },
+  {
+
+    image: {g3}
+  }
+]

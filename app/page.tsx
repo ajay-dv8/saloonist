@@ -12,6 +12,7 @@ import Contact from "@/components/contact";
 import BecomeCustomer from "@/components/becomeCustomer";
 import Footer from "@/components/footer";
 import { ServiceSlides } from "@/components/serviceSlides";
+import { ServiceImageComponent } from "@/components/serviceImagesComponent";
 
 export default function Home() {
 
@@ -65,8 +66,7 @@ export default function Home() {
           className="w-full"
         />
       </div>
-
-      <ServiceSlides/>
+      
       <Services/>
 
       <BecomeCustomer/>
