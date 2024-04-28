@@ -56,7 +56,7 @@ const BookingForm = () => {
 
 
 
-    <Dialog className="w-full flex">
+    <Dialog>
       <DialogTrigger asChild className="w-full flex justify-center item-center">
 
         <div className="">
@@ -139,7 +139,7 @@ const BookingForm = () => {
           </div>
 
           <div className="grid w-full gap-1.5">
-            <DatePicker  className="w-full"/>
+            <DatePicker />
           </div>
 
           <div className="grid w-full gap-1.5">
