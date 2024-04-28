@@ -1,5 +1,6 @@
 "use client";
 import { ParallaxScroll } from "./ui/parallaxScroll";
+import { ParallaxScrollS } from "./ui/parallaxScrollS";
 
 import g1 from "@/public/g1.webp";
 import g2 from "@/public/g2.webp";
@@ -12,7 +13,7 @@ import b2 from "@/public/b2.webp";
 import b3 from "@/public/b3.webp";
 
 export function ServiceImageComponent() {
-  return <ParallaxScroll images={images} />;
+  return <ParallaxScrollS images={images} />;
 }
 
 const images = [

@@ -1,6 +1,5 @@
 import Link from "next/link"
 import ImageCarousel from "./carousel"
-import ScrollDownIndicator from "./scrollDownIndicator"
 import { motion } from "framer-motion"
 
 const Hero = () => {
@@ -12,13 +11,12 @@ const Hero = () => {
           
         </div>
         <div className="relative ">
-          <ImageCarousel/>
           
-          {/* ScrollDownIndicator */}
+          <ImageCarousel/>
 
         <div className="absolute xs:bottom-10 bottom-10 w-full justify-center items-center z-40 sm:flex hidden">
           <Link href="">
-            <div className="rounded-3xl .w-[2.2rem] h-[4rem] border-4 border-secondary flex justify-center items-start p-2">
+            <div className="rounded-3xl w-[2.2rem] h-[4rem] border-4 border-secondary flex justify-center items-start p-2 animate-bounce">
               <motion.div
                 animate={{
                   y: [0, 24, 0]

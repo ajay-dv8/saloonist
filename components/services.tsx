@@ -20,11 +20,14 @@ const Services = () => {
   return (
     <>
     <div className='w-full pt-20 px-20 pb-10'>
-      <span data-aos="zoom-in" className="w-full text-7xl text-[#BE3455] py-28 font-light drop-shadow-xl ">
+      <div data-aos="zoom-in" className="w-full text-7xl text-[#BE3455] py-28 font-light drop-shadow-xl ">
         {/* Checkout Our <span className="underline text-indigo-500">Services</span> */}
 
-        What we do.
-      </span>
+        Q. What we do? 
+        <span className="opacity-40 text-lg text-gray-800"> Ans: Saloonist is a unisex salon, We provide a wide range of style and cutz for you to select from, 
+          
+        </span>
+      </div>
 
       <ServiceImageComponent/>
       {/* <div className="flex flex-row pt-16">
