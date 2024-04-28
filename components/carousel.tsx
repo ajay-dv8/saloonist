@@ -15,6 +15,7 @@ import b1 from '@/public/b1.webp'
 import b3 from '@/public/b3.webp'
 import img8 from '@/public/img8.webp'
 import img9 from '@/public/img9.webp'
+
 export default function ImageCarousel() {
   return (
     <>
