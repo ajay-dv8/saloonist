@@ -13,7 +13,7 @@ import b2 from "@/public/b2.webp";
 import b3 from "@/public/b3.webp";
 
 export function ServiceImageComponent() {
-  return <ParallaxScrollS images={images} />;
+  return <ParallaxScroll images={images} />;
 }
 
 const images = [
